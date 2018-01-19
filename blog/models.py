@@ -2,7 +2,7 @@ from django.db import models
 from django.utils import timezone
 
 # Create your models here.
-class Post(models.Model):
+class Post(models.Model): #models.Model: Así Django sabe que debe guardarlo en la BD
     
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=200)

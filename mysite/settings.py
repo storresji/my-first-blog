@@ -16,10 +16,10 @@ import socket
 
 # System specific dev settings.
 if socket.gethostname() == "mystic":
-	MEDIA_URL = 'https://thebitguru.com/projectname_media/'
-	SERVE_STATIC_FILES = False
+    MEDIA_URL = 'https://thebitguru.com/projectname_media/'
+    SERVE_STATIC_FILES = False
 else:
-	SERVE_STATIC_FILES = True
+    SERVE_STATIC_FILES = True
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
